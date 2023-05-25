@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Address Book Home Page</title>
+        <link rel="stylesheet" href="../css/new_home.css">
+        <link
+            href="https://fonts.googleapis.com/css?family=Montserrat:ital,wghte,
+            108; 0,200;0,308;0,480;0,600; 1,5086display=swap"
+            rel="stylesheet">
+        <link
+            href="https://fonts.googleapis.com/css?family=Roboto:ught2380;408;500;6ee6display=suap"
+            rel="stylesheet">
+    </head>
+    <body>
+        <header class="header-content header">
+            <div class="logo-content">
+                <img src="../assets/images/logo-add.jpg" width="5%" height="5%" alt="Logo Image">
+                <div>
+                    <span class="emp-text">ADDRESS</span>
+                    <span class="emp-text emp-payroll">BOOK</span>
+                </div>
+            </div>
+        </header>
+        <div class="main-content">
+            <div class="header-content">
+                <div class="emp-detail-text">
+                    Person Details 
+                </div>
+                <a href="new_addressbook.html" class="add-button">
+                    <img src="../assets/icons/add-24px.svg" alt="Add User Logo">Add Person
+                </a>
+            </div>
+        </div>
+        <table id="table-display" class="table">
+            <tr>
+              <th>Full Name</th>
+              <th>Address</th>
+              <th>City</th>
+              <th>State</th>
+              <th>Zip Code</th>
+              <th>Phone Number</th>
+              <th></th>
+          </tr>
+          <tr>
+            <td>Viraza Mishtra</td>
+            <td>Marve Road, Malad(west)</td>
+            <td>Mumbai</td>
+            <td>Maharshtra</td>
+            <td>410206</td>
+            <td>2012154633</td>
+            <td>
+                <img id="1" onclick="remove(this)"
+                    src="../assets/icons/delete-black-18dp.svg"
+                    alt="delete">
+                <img id="1" onclick="update(this)"
+                    src="../assets/icons/create-black-18dp.svg" alt="edit">
+            </td>
+        </tr>
+
+        <tr>
+          <td>Trishna Balla</td>
+          <td>Vashi, Navi-Mumbai</td>
+          <td>Mumbai</td>
+          <td>Maharshtra</td>
+          <td>410221</td>
+          <td>3512154633</td>
+          <td>
+            <img id="1" onclick="remove(this)"
+                src="../assets/icons/delete-black-18dp.svg"
+                alt="delete">
+            <img id="1" onclick="update(this)"
+                src="../assets/icons/create-black-18dp.svg" alt="edit">
+        </td>
+      </tr>
+        </table>
+          <script defer src="../js/AddFormValidation.js"></script>
+          <script src="../js/site_properties.js"></script>
+    </body>
+</html>
+
+
+
